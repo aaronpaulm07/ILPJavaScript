@@ -44,10 +44,37 @@
 
 //OBJECTS
 
-let user1 = {
-  name: "sss",
-  age: 30,
-};
+// let user1 = {
+//   name: "sss",
+//   age: 30,
+// };
 
-user1.name = promt("enter name");
-console.log(user1.name + " hi");
+// user1.name = promt("enter name");
+// console.log(user1.name + " hi");
+
+//desconstructing
+// const person2 = {
+//   firstName: "a",
+//   lastName: "b",
+//   password: "jcdvfe",
+// };
+// const { firstName: fn, lastName: ln } = person2;
+// console.log(fn);
+
+//constructor
+// let promise = new Promise(function (resolve, reject) {
+//   setTimeout(() => resolve("done"), 1000);
+//    set Timeout(()=> reject("Error"),1000);
+// });
+//executer
+// promise
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error.message));
+
+const request = fetch("https://dummyjson.lcom/users/");
+console.log(request);
+
+request
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error.message));
