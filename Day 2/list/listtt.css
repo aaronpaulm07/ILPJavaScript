@@ -12,6 +12,18 @@
   border-style: solid;
   margin: 10px;
 }
-.dot.active {
+.dot.active1 {
   background-color: #ff0000;
+}
+.dot.active2 {
+  background-color: #b90000;
+}
+.dot.active3 {
+  background-color: #fffb00;
+}
+.dot.active4 {
+  background-color: #fbff00;
+}
+.dot.active5 {
+  background-color: #15ff00;
 }

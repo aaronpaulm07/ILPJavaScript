@@ -13,7 +13,7 @@ let changecolor = () => {
     highlight++;
     let row = document.getElementById(`line${highlight}`);
     listLine = row.querySelectorAll(".dot");
-    listLine.forEach((item) => item.classList.toggle("active"));
+    listLine.forEach((item) => item.classList.toggle(`active${highlight}`));
   }
 };
 
@@ -21,7 +21,7 @@ let revertcolor = () => {
   if (highlight > 0) {
     let row = document.getElementById(`line${highlight}`);
     listLine = row.querySelectorAll(".dot");
-    listLine.forEach((item) => item.classList.toggle("active"));
+    listLine.forEach((item) => item.classList.toggle(`active${highlight}`));
     highlight--;
   }
 };
